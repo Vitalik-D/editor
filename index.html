@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+<div style="display: flex;align-items: center;justify-content: center; height: 20px;">
+    <p>color:</p>
+    <select name="color" onclick="editTextColor(value)">
+        <option value="rgb(0,0,0)" selected>black</option>
+        <option value="rgb(255,255,255)">white</option>
+        <option value="rgb(255,255,0)">yellow</option>
+    </select>
+    <p>font-size:</p>
+    <select name="fontSize" onclick="editFontSize(value)">
+        <option value="18" selected>18</option>
+        <option value="24">24</option>
+        <option value="36">36</option>
+    </select>
+    <p>background:</p>
+    <select name="background" onclick="editBackground(value)">
+        <option value="rgb(0,100,0)" selected>green</option>
+        <option value="rgb(255,255,255)">white</option>
+        <option value="rgb(255,255,0)">yellow</option>
+    </select>
+    <button onclick="addBr()">
+        br
+    </button>
+    <button onclick="getJson()">
+        json
+    </button>
+</div>
+
+<div contenteditable="true" class="relative-position cursor_normal none_outline"
+     style="color: rgb(255, 255, 255); opacity: 1; border-radius: 6px; transform: rotate(0deg); border: 0px solid rgb(70, 144, 247); padding: 10px; text-align: center; letter-spacing: 0px; font-size: 32px; font-family: Aleo; font-weight: 300; text-decoration: none; box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px; text-transform: initial; font-style: normal; z-index: 2002; text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 0px; line-height: 1.5em;"
+     spellcheck="false"
+id="base"
+>
+
+  <span style="background-color: rgb(248, 187, 208); padding-left:3px; padding-right: 3px; border-radius: 4px;">
+    <span>Hi</span></span>
+    <br/>
+    <span style="background-color: rgb(248, 187, 208); padding-left:3px; padding-right: 3px; border-radius: 4px;">
+    <span>My lovely</span>
+    <span class="" style="color: rgb(136, 14, 79); font-size: 54px">little</span>
+  <span class="" style="color: rgb(186, 104, 200); background: rgb(248, 187, 0);">Ponny</span>
+  </span>
+</div>
+
+</body>
+</html>
